@@ -1,0 +1,115 @@
+body{
+    background-color: #1C82AD;
+}
+.bar{
+    opacity: 1;
+    position: relative;
+    left: 0px;
+    background-color:  #8DCBE6;
+    width: 150%;
+    border: 2px solid;
+    border-radius: 10px ;
+    margin-top: 0px;
+    margin-left: -20px;
+    transition: 1s;
+    padding: 0px;
+    
+    
+}
+.b{
+    background-color:wheat;
+    width: 30px;
+    height:30px ;
+    border: 2px solid;
+    border-radius: 10px;
+    opacity: 1;
+    margin-top: -50px;
+}
+.b:hover{
+    cursor: pointer;
+}
+
+
+ul{display: flex;
+    padding: 0px;
+    margin-left: 8px;
+    
+}
+li{border: 2px solid  #0A2647;
+    border-radius: 8px;
+    background-color: #0A2647;
+    color: white;
+    text-align: center;
+    list-style: none;
+    padding: 4px;
+    width: 80px;
+    margin-left: 4px;
+}
+li:hover{
+    color:#F3EFE0 ;
+    background-color: #263159;
+    text-shadow: 4px 4px 2px 2px;
+    box-shadow:4px 4px 2px 2px black; 
+    opacity: 0.7;
+    cursor: pointer;
+}
+@media(max-width:788px){
+    ul{
+        display: block;
+    }
+    li{
+        width: 150px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bar{
+        opacity: 1;
+        position: absolute;
+        left: -400px;
+        background-color: #8DCBE6;
+        width: 200px;
+        border: 2px solid #8DCBE6;
+        border-radius: 10px ;
+        margin-top: 10px;
+        margin-left: 10px;
+        transition: 1s;
+    
+}
+.bar.active{
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    transition: 1s;
+    
+}
+.b{
+    opacity: 1;
+    background-color: white;
+    margin-top: 0px;
+}
+.s1,.s2,.s3 {color: black;
+    border-bottom: 2px solid;
+    display: block;
+    width: 18px;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+.s1.active{
+
+    transform: rotate(40deg);
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.s2.active {
+    
+    margin-top: -9px;
+    margin-left: -1px;
+    transform: rotate(-40deg);
+}
+.s3.active{
+    opacity: 0;
+}
